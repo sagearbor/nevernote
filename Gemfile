@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass', '~> 3.3.5.1'
+gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'byebug'
@@ -24,6 +25,12 @@ group :development do
   #gem 'better-errors'
   gem 'quiet_assets'
 end
+
+group :test do
+  # gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+end
+
 
 group :production do
  gem 'rails_12factor'

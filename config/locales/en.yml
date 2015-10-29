@@ -19,5 +19,31 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
+es:
+  hello: "Hola mundo"
+  one: "uno"
+  two: "dos"
+  three: "tres"
+
 en:
   hello: "Hello world"
+  one: "one"
+  two: "two"
+  three: "three"
+
+  note:
+    flash:
+      create:
+        success: "Your note has been created!"
+        failure: "There was a problem creating your note."
+      update:
+        success: "Saved!"
+        failure: "There was a problem saving your changes."
+  user:
+    registration:
+      heading: "Sign Up for Nevernote"
+      button: "Sign Up"
+    flash:
+      create:
+        success: "Thanks for signing up!"
+        failure: "There was a problem with your registration."
