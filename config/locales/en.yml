@@ -19,11 +19,6 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-es:
-  hello: "Hola mundo"
-  one: "uno"
-  two: "dos"
-  three: "tres"
 
 en:
   hello: "Hello world"
@@ -47,3 +42,21 @@ en:
       create:
         success: "Thanks for signing up!"
         failure: "There was a problem with your registration."
+  session:
+    new:
+      heading: "Sign In"
+      button: "Sign In"
+    flash:
+      create:
+        success: "Welcome!"
+        failure: "There was a problem logging in with those credentials."
+      destroy:
+        success: "Come back soon!"
+        failure: "We couldn't log you out. Maybe you weren't logged in!"
+
+
+es:
+  hello: "Hola mundo"
+  one: "uno"
+  two: "dos"
+  three: "tres"

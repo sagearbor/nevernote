@@ -12,7 +12,12 @@
   <div class="row">
     <div class="col-xs-12">
       <header>
-        <div class="well">Nevernote</div>
+        <div class="well">
+          Nevernote
+          <div class="user-links">
+            <%= link_to 'Logout', logout_path, method: :delete %>
+          </div>
+        </div>
       </header>
     </div>
   </header>
