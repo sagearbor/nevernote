@@ -4,10 +4,15 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :current_user
 
-  private
+  protected
 
   def current_user
-    # If thing on left is truthy then set it, then assign thing on right to it
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
+
+  def authorize_user
+    if current_user.nil?
+      redirect_to login_path, alert: t('session.flash.unauthenticated')
+    end
   end
 end
