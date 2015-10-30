@@ -41,7 +41,7 @@
                   <%= link_to n.title, edit_note_path(n) %>
                 </div>
                 <div class="note-body">
-                  <%= n.body_html %>
+                  <%= n.body_html.to_s.html_safe %>
                 </div>
               </li>
             <% end %>

@@ -3,7 +3,8 @@
     <%= f.text_field :title, placeholder: 'Title your note' %>
   </p>
   <p>
-    <%= f.text_area :body_html %>
+    <!-- <%= f.text_area :body_html %> -->
+    <%= f.bootsy_area :body_html %>
   </p>
   <div class="form-actions">
     <%= f.submit class: 'btn btn-default' %>
